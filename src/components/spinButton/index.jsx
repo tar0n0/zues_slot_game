@@ -26,7 +26,7 @@ export default function SpinButton({ boardRef, onClick }) {
             const x = rect.left + rect.width / 2;
             const y = rect.bottom - insetInside;
 
-            btn.style.left = `50%`;
+            btn.style.left = `30%`;
             btn.style.top = `80%`;
         }
 
