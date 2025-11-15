@@ -16,6 +16,10 @@ export default function MobileStartPopup() {
     return (
         <div className="mobile-start-popup">
             <div className="mobile-start-popup-content">
+                <p>❗ ❗ ❗❗❗❗❗❗❗
+
+
+                </p>
                 <p>
                     I had very, very limited time and couldn’t test all cases and devices.
                     If something goes wrong, please reload the page and continue.
