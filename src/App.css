@@ -9,13 +9,14 @@ html, body {
 
 .app {
     width: 100vw;
-    height: 100dvh;
     background-image: url("/assets/Background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;
+    height: calc(var(--vh) * 100);
+    overflow: hidden;
 
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
@@ -50,14 +51,15 @@ html, body {
 }
 .slot-board-overlay {
     position: absolute;
-    bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 52vh;
     max-height: 420px;
     pointer-events: none;
+    top: 42%; /* как в Figma */
 }
+
 
 .slot-board-overlay canvas {
     width: 100% !important;

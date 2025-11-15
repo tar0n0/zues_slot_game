@@ -26,8 +26,8 @@ export default function SpinButton({ boardRef, onClick }) {
             const x = rect.left + rect.width / 2;
             const y = rect.bottom - insetInside;
 
-            btn.style.left = `${x}px`;
-            btn.style.top = `${y}px`;
+            btn.style.left = `50%`;
+            btn.style.top = `80%`;
         }
 
         window.addEventListener("resize", updatePosition);

@@ -11,6 +11,19 @@ export default function App() {
     const [boardPos, setBoardPos] = useState(null);
     const boardRef = useRef(null); // <--- добавлено
 
+
+    useEffect(() => {
+        function fixVH() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty("--vh", `${vh}px`);
+        }
+
+        fixVH();
+        window.addEventListener("resize", fixVH);
+        return () => window.removeEventListener("resize", fixVH);
+    }, []);
+
+
     function startSpin() {
         if (isSpinning) return;
         setIsSpinning(true);
