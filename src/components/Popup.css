@@ -1,0 +1,67 @@
+.popup {
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(3, 84, 255, 0.71);
+    position: fixed;
+    text-align: center;
+}
+
+.popup-box {
+    position: relative;
+    top: 30%;
+}
+
+.logo-container-pop-up {
+    position: absolute;
+    left: 50%; /* Moves left edge to viewport center */
+    top: 50%; /* Optional: For vertical center too */
+    width: 90%; /* Responsive width: 90% of viewport */
+    max-width: 420px; /* Cap for large screens */
+    min-width: 300px; /* Minimum for small screens */
+    transform: translate(-50%, -50%); /* Shifts back by 50% of its own width/height */
+    /* Add your styles: padding, bg, etc. */
+}
+
+.content-container {
+    position: relative;
+    left: 50%;
+    top: 108%;
+    width: 90%;
+    max-width: 420px;
+    min-width: 300px;
+    transform: translate(-50%, 50%);
+}
+.button-part {
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    width: 90%;
+    max-width: 420px;
+    min-width: 300px;
+    transform: translate(-50%, 50%);
+}
+
+
+/* BUBBLES */
+/* --- Bubbles --- */
+.bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 50%;
+    pointer-events: none;
+
+    /* теперь пузырьки появляются над кнопкой */
+    top: 16px;        /* над кнопкой */
+}
+
+/* стартовые X-позиции в центре */
+.b1 { left: 48%; }
+.b2 { left: 52%; }
+.b3 { left: 50%; }
