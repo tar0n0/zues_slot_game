@@ -4,12 +4,18 @@ import "./App.css";
 import { Header } from "./components/Header.jsx";
 import SlotMachine from "./components/SlotMachine.jsx";
 import SpinButton from "./components/spinButton/index.jsx";
+import {isMobile} from "./helpers/isMobile.js";
 
 export default function App() {
     const [isSpinning, setIsSpinning] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
     const [boardPos, setBoardPos] = useState(null);
     const boardRef = useRef(null); // <--- добавлено
+    const [isMobileDevice, setIsMobileDevice] = useState(true);
+
+    useEffect(() => {
+        setIsMobileDevice(isMobile());
+    }, []);
 
 
     useEffect(() => {
@@ -32,6 +38,15 @@ export default function App() {
     function spinFinished() {
         setIsSpinning(false);
         setShowPopup(true);
+    }
+
+    if (!isMobileDevice) {
+        return (
+            <div className="mobile-warning">
+                <h1>Mobile Only App</h1>
+                <p>Please open this game on your mobile device and reload page.</p>
+            </div>
+        );
     }
 
     return (

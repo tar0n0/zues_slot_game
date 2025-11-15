@@ -66,3 +66,28 @@ html, body {
     height: 100% !important;
     display: block;
 }
+
+
+.mobile-warning {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.mobile-warning h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.mobile-warning p {
+    font-size: 18px;
+    opacity: 0.8;
+}
