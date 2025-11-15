@@ -5,6 +5,7 @@ import { Header } from "./components/Header.jsx";
 import SlotMachine from "./components/SlotMachine.jsx";
 import SpinButton from "./components/spinButton/index.jsx";
 import {isMobile} from "./helpers/isMobile.js";
+import MobileStartPopup from "./components/mobileStartPopUp/index.jsx";
 
 export default function App() {
     const [isSpinning, setIsSpinning] = useState(false);
@@ -51,6 +52,7 @@ export default function App() {
 
     return (
         <div className="app">
+            <MobileStartPopup />
             <div className="content">
                 <Header />
 
