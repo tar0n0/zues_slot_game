@@ -57,7 +57,7 @@ html, body {
     height: 52vh;
     max-height: 420px;
     pointer-events: none;
-    top: 38%; /* как в Figma */
+    top: 30%; /* как в Figma */
 }
 
 
